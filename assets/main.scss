@@ -1,0 +1,80 @@
+---
+---
+@import "minima";
+
+h2.post-list-heading
+{
+   #font-style: italic;
+}
+
+.site-header
+{
+  background-color: burlywood;
+  border-bottom: 1px solid black;
+}
+
+.site-footer
+{
+  background-color: burlywood;
+  border-top: 1px solid black;
+}
+
+hr
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+  rgba(0,0,0,0),  
+  rgba(0,0,0,0.75),
+  rgba(0,0,0,0));  
+} 
+
+ /*line-height: $base-line-height * $base-font-size * 2.25;*/
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 150;
+  line-height:  $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+}
+
+
+/*line-height: $base-line-height * $base-font-size * 2.25;*/
+
+.site-title-description
+{
+  @include relative-font-size(1.025);
+  font-weight: 300;
+  line-height: 62px;  
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  float: left;
+  color: #6e583a;
+ 
+}
+
+.footer-heading 
+{
+  letter-spacing: -1px;
+  color: rgb(110, 88, 58);
+  font-weight: 300;
+}
+
+.footer-col-wrapper
+{
+  font-weight: 300;
+  color: #6e583a;
+}
+
+.teaser
+{
+  color:#6e583a;
+  font-style: italic;
+  margin: 15px;
+}
