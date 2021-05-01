@@ -74,11 +74,11 @@ LISTENER_MYTEST2 =
 
 #### listener.ora
 
-We have on TCP listening port and IPC configured for registration of database services. Some basic CIS security settings are applied, as they are very common for Oracle database setups.
+We have a TCP listening port and IPC configured for registration of database services. Some basic CIS security settings are applied, as they are very common for Oracle database setups.
 
 In comparison to the tnsnames.ora, files are different on each node, since they contain the hostname of the server. 
 
-Also the databases must have a static entry to work for creation of the standby database and correct operation of Data Guard (?? Broker) ???  (static entries are needed for transient upgrade, but are they really required for Data Guard (Broker)) ???
+Also the databases must have a static entry to work for creation of the standby database and correct operation of Data Guard.
 
 ##### oracledb01
 
