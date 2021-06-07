@@ -4,9 +4,9 @@ title:  "Create a physical standby database with Oracle 12.1"
 date:   2020-11-16 13:38:28 +0100
 categories: Oracle DataGuard
 ---
-# Create a physical standby database with Oracle 12.1
+This guide will help you build a physical standby database for Oracle Database 12.1. We will start from a standalone instance, adding a standby database without any graphical interface tools. Initial setup will see us manually creating all the configuration needed. <!--break-->
 
-This guide will help you build a physical standby database for Oracle Database 12.1. We will start from a standalone instance, adding a standby database without any graphical interface tools. Initial setup will see us manually creating all the configuration needed. Later we advance to converting to a Data Guard Broker setup, allowing easy handling of switchover and failover tasks.
+Later we advance to converting to a Data Guard Broker setup, allowing easy handling of switchover and failover tasks.
 
 ## Assumptions
 

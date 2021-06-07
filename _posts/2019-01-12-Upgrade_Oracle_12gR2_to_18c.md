@@ -4,14 +4,11 @@ title: "Upgrade from Oracle 12.1 to 18c"
 date:   2019-01-12 14:00:00 +0100
 categories: Oracle Upgrade
 ---
-# Preface
-This time big red database is in the focus of upgrade. I'll show a straight-forward way to put your Oracle 12.1 database up to new heights with Oracle 18c. I use a simple as possible setup so everyone can reproduce (sorry, no ASM here) what happens.
+This time big red database is in the focus of upgrade. I'll show a straight-forward way to put your Oracle 12.1 database up to new heights with Oracle 18c. I use a simple as possible setup so everyone can reproduce (sorry, no ASM here) what happens. <!--break-->
 
 The only thing I like is having the latest patches applied. On the new as on the old releases that are used. So the patches are listed in the test scenario. By the way: Oracle 18c image comes with the latest patch already applied. Nice.
 
-Altough showing only one method to upgrade in this post, I'll give the reader some ideas what is left in the field.
-
-*Please take care that you obey Oracle's licence when testing and/or using their products! Several products come with a [developer license](https://www.oracle.com/technetwork/licenses/standard-license-152015.html) so you can evaluate them.*
+Although showing only one method to upgrade in this post, I'll give the reader some ideas what is left in the field.
 
 ## Test scenario
 * Oracle Linux 7.5 server (rpm packages oracle-rdbms-server-12cR1-preinstall and oracle-database-preinstall-18c installed to satisfy all dependencies)
@@ -37,7 +34,7 @@ Upgrade actions will include the following steps:
 
 ### Installation of Oracle 18c
 First and foremost you need to put the new release on your system. [Download Oracle 18c from their website](https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html).
-Oracle changes more and more of their product to image-based installation. The source file contains a compressed Oracle home you extract directly to your final destination. Then you start runInstaller to make the image fit your system. You can find the official guideline for doing this [here](https://docs.oracle.com/en/database/oracle/oracle-database/18/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9).
+Oracle changes more and more of their product to image-based installation. The source file contains a compressed Oracle home you extract directly to your final destination. Then you start `runInstaller` to make the image fit your system. You can find the official guideline for doing this [here](https://docs.oracle.com/en/database/oracle/oracle-database/18/ladbi/running-oracle-universal-installer-to-install-oracle-database.html#GUID-DD4800E9-C651-4B08-A6AC-E5ECCC6512B9).
 
 ### Pre-Upgrade Information Tool
 This tool is provided with the new software installation and it helps you determining issues and system status prior to the real upgrade.

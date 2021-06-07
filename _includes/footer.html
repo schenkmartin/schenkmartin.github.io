@@ -10,7 +10,7 @@
         <ul class="contact-list">
 
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">Send me an email</a></li>
+            <li><img src="{{ '/assets/email-icon.png' | relative_url }}" class="png-icon"><a class="u-email" href="mailto:{{ site.email }}">Send me an email</a></li>
             {%- endif -%}
         </ul>
       </div>

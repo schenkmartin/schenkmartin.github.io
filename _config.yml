@@ -56,3 +56,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# additional formatting
+show_excerpts: true
+excerpt_separator: "<!--break-->"
+
+# not now ...
+#linkedin_username: martin-schenk-6a77aa10a
